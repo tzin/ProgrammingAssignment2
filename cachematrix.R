@@ -17,7 +17,7 @@ makeCacheMatrix <- function(x = matrix()) {
     invrs <<- NULL
   }
   get <- function() x
-  setinvrs <- function(solve) invrs <<- solve
+  setinvrs <- function(matInv) invrs <<- matInv
   getinvrs <- function() invrs
   list(set = set, get = get, setinvrs = setinvrs, getinvrs = getinvrs)
   
